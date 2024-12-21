@@ -1,5 +1,5 @@
 if texturepack then texturepack:Disconnect() end
-local Pack = game:GetObjects("rbxassetid://14261862180")
+local Pack = game:GetObjects("rbxassetid://14490132763")
 Pack[1].Parent = game:GetService("ReplicatedStorage")
 local Items = Pack[1]:GetChildren()
 getgenv().texturepack = workspace.CurrentCamera.Viewmodel.DescendantAdded:Connect(function(m)
@@ -12,9 +12,9 @@ getgenv().texturepack = workspace.CurrentCamera.Viewmodel.DescendantAdded:Connec
 				offset = CFrame.Angles(math.rad(0),math.rad(-100),math.rad(-90))
 			elseif v.Name:find("axe") then
 				offset = CFrame.new(0,0.45,0) * CFrame.Angles(math.rad(0),math.rad(-10),math.rad(-95))
-        	elseif v.Name:find('pickaxe') then
-          		offset = CFrame.Angles(math.rad(0), math.rad(-180), math.rad(-95))
-        	end
+            elseif v.Name:find('pickaxe') then
+                offset = CFrame.Angles(math.rad(0), math.rad(-180), math.rad(-95))
+            end
 			break
 		end
 	end
